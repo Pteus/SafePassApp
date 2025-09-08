@@ -24,11 +24,10 @@
 
   <body>
     <div class="vh-100 ">
+      <%= render partial: "shared/flash" %>
       <div class="h-100 container d-flex flex-column justify-content-center align-items-center">
         <%= link_to root_path, class: "navbar-brand" do %>
-          <h2>
-            <i class="bi bi-safe-fill me-2"> SafePass</i>
-          </h2>
+          <%= logo "h2" %>
         <% end %>
         <div class="card card--auth shadow-sm w-100">
           <div class="card-body">

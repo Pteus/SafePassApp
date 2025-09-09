@@ -1,0 +1,29 @@
+.entries {
+  #dashboard {
+    &.card {
+      height: calc(100vh - 15rem);
+      padding: 0;
+    }
+
+    .entries-card {
+      display: flex;
+      overflow-y: hidden;
+      height: 100%;
+
+      &__sidebar {
+        width: 100%;
+        max-width: 25%;
+        overflow-y: scroll;
+        padding-top: 1.5rem;
+        background-color: $gray-100;
+        border-right: 1px solid $gray-400;
+        border-radius: $btn-border-radius 0 0 $btn-border-radius;
+      }
+
+      &__main {
+        padding: 1.5rem;
+        flex-grow: 1;
+      }
+    }
+  }
+}

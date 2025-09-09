@@ -1,4 +1,10 @@
-<div>
-  <!-- no need for @-->
-  <%= link_to entry.name, entry_path(entry) %>
-</div>
+<!-- no need for @-->
+<%= link_to entry_path(entry), class: "nav-link" do %>
+  <div class="d-flex align-items-center">
+    <div class="entry-favicon">
+      <%= image_tag "https://www.google.com/s2/favicons?domain=#{entry.url}&sz=32", alt: entry.name %>
+    </div>
+    <%= entry.name %>
+  </div>
+<% end %>
+
